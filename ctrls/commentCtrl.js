@@ -3,6 +3,7 @@
  
      app.controller('commentCtrl', function () {
         this.date = new Date();
+        
         this.comments = [{
          nameCommentator: "anonimous",
          date: "25/08/2017", //"dateNow.toString()",

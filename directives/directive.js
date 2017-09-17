@@ -1,20 +1,20 @@
-app.directive('mainDir', function () {
-    return {
-        scope: {
-          name: '=',
-        },
-        controller:  'mainCtrl',
-        controllerAs: 'vm',     
-        templateUrl: 'parts/main_part.html'
-    	}
-});
+// app.directive('mainDir', function () {
+//     return {
+//         scope: {
+//           name: '=',
+//         },
+//         controller:  'mainCtrl',
+//         controllerAs: 'vm',     
+//         templateUrl: 'parts/main_part.html'
+//     	}
+// });
 app.directive('commentDir', function () {
 	return {
         scope: {
           name: '=',
         },
-        controller:  'commentCtrl',
-        controllerAs: 'commentVm',     
+        //controller:  'commentCtrl',
+        //controllerAs: 'commentVm',     
         templateUrl: 'parts/comment_part.html'
 		}
 });

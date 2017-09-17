@@ -3,6 +3,12 @@
  
      app.controller('loginCtrl', function () {
         //this.date = new Date();
+        this.registration = function(value) {
+              this.value = value;
+              this.ent = !this.ent;
+              console.log('regchange');
+              //this.reg = true;
+            }
         this.user = [];
         
         this.resetLogin = function() {

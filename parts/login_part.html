@@ -1,14 +1,14 @@
     <div ng-controller="loginCtrl as loginVm">
-    <p ng-if="vm.ent" style="text-align: center">Вы зарегистривованы? <br>Тогда </p>
-  <div style="text-align: center"><button ng-if="vm.ent" ng-click="vm.registration()" type="button" class="btn btn-link">
+    <p ng-if="loginVm.ent" style="text-align: center">Вы зарегистривованы? <br>Тогда </p>
+  <div style="text-align: center"><button ng-if="loginVm.ent" ng-click="loginVm.registration()" type="button" class="btn btn-link">
       Войдите
     </button></div>
-    <p ng-if="!vm.ent" style="text-align: center">Вы еще не зарегистривованы?</p>
-    <div style="text-align: center"><button  ng-if="!vm.ent" ng-click="vm.registration()" type="button" class="btn btn-link" style="text-align: center">
+    <p ng-if="!loginVm.ent" style="text-align: center">Вы еще не зарегистривованы?</p>
+    <div style="text-align: center"><button  ng-if="!loginVm.ent" ng-click="loginVm.registration()" type="button" class="btn btn-link" style="text-align: center">
     Зарегистрируйтесь
     </button></div>
 
-    <form ng-if="!vm.ent" 
+    <form ng-if="!loginVm.ent" 
           value="enter" 
           style="border: 2px solid lightblue; text-align: center; margin-top: 10px;" 
           class="img-rounded"
@@ -38,7 +38,7 @@
     </form>
     
 
-    <form ng-if="vm.ent" 
+    <form ng-if="loginVm.ent" 
     value="registration" 
     style="border: 2px solid lightblue; text-align: center; margin-top: 10px;" 
     class="img-rounded"

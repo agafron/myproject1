@@ -20,11 +20,7 @@
             this.back = false;
             console.log('back');
           };
-            this.registration = function(value) {
-              this.value = value;
-              this.ent = !this.ent;
-              //this.reg = true;
-            }
+            
           
       this.list = [     
           {
