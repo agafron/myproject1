@@ -24,7 +24,7 @@ app.directive('loginDir', function () {
           name: '=',
         },
         controller:  'loginCtrl',
-        controllerAs: 'commentVm',     
+        controllerAs: 'loginVm',     
         templateUrl: 'parts/login_part.html'
 		}
 });

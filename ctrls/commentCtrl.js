@@ -35,8 +35,8 @@
   //console.log(this.comments);
   console.log(this.newComment);
 }
- this.backs = function() {
-            this.back = false;
-            console.log('back');
-          };
+ // this.backs = function() {
+ //            this.back = false;
+ //            console.log('back');
+ //          };
 });

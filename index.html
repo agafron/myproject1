@@ -9,7 +9,7 @@
     <script src="ctrls/mainCtrl.js"></script>
     <script src="ctrls/commentCtrl.js"></script>
     <script src="ctrls/loginCtrl.js"></script>
-    <!-- <script src="directives/directive.js"></script> -->
+    <script src="directives/directive.js"></script>
     <!-- <script src="functions/timeFunction.js"></script> -->
     <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     
@@ -38,7 +38,8 @@
     
     </div>
     <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
-  <div class="main">
+  <main-dir></main-dir>
+  <!-- <div class="main">
   <img src="img/header.jpg" class="img-rounded" alt="header" style="text-align: center; border: 13px solid lightgreen;">
   
       <div class="pull-right" ng-if="!vm.back" style="margin-right: 15px;">
@@ -72,9 +73,9 @@
         </div>
         <button ng-click="vm.backs()" class="btn btn-warning">Back</button>
   </form>
-  </div>
+  </div> -->
 <!-- comments -->
-
+<!-- <comment-dir></comment-dir> -->
 <form class="bg-success img-rounded" 
  ng-if="vm.back"  style="border: 2px solid lightblue; margin-top: 10px"  
  ng-controller="commentCtrl as commentVm"  
